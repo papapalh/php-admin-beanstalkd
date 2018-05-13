@@ -1,0 +1,6 @@
+{
+    "name": "root/beanstalkd",
+    "require": {
+        "pda/pheanstalk": "v3.0.2"
+    }
+}
