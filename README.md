@@ -31,5 +31,5 @@
 
 * 消费者类
   * 设置任务优先级为1000/延时秒数为10s/超时重发时间8s 
-      *`php admin.php --tube=newUser --priority=1000 --delayed=10 --again=8 --put='I am job'`
+    * `php admin.php --tube=newUser --priority=1000 --delayed=10 --again=8 --put='I am job'`
   * 取出队列后删除任务 `php admin.php --tube=newUser --reserved --delete`
