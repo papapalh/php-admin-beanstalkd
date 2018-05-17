@@ -1,5 +1,6 @@
 <?php
 // 引入 pda/pheanstalk 类
+require_once('config.php');
 require_once('vendor/autoload.php');
 
 use Pheanstalk\Pheanstalk;
@@ -14,12 +15,9 @@ class My_Beanstalkd
     private $delayed;
     private $again;
 
-    CONST IP = '127.0.0.1';
-    CONST PORT = 11300;
-
     public function __construct()
     {
-        $this->beanstalkd = new Pheanstalk(self::IP, self::PORT);
+        $this->beanstalkd = new Pheanstalk(Config::IP, Config::PORT);
     }
 
     // 帮助
@@ -124,6 +122,7 @@ class My_Beanstalkd
         $this->beanstalkd->delete($this->job);
         echo "\e[32mdone.\e[0m\n";
     }
+
 }
 
 $my_beanstalkd = new My_Beanstalkd();
