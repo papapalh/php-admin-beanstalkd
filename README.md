@@ -12,6 +12,7 @@
 ##快速开始.
 * 拉取 Github 项目至本地. git clone `https://github.com/papapalh/php-admin-beanstalkd.git`
 * 使用 `composer update` 拉取 `composer` 依赖.
+* 修改项目下的`config.php`的配置文件
 
 ##演示实例
 * 基本
